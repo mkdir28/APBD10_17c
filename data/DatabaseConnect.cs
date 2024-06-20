@@ -2,7 +2,7 @@ using CodeFirst.models;
 using CodeFist.models;
 using Microsoft.EntityFrameworkCore;
 
-namespace APBD10_1_17c.data;
+namespace APBD10_17c.data;
 
 public class DatabaseConnect: DbContext
 {
