@@ -66,8 +66,25 @@ public class DatabaseConnect: DbContext
             new Doctor
             {
                 IdDoctor = 1,
-                FiestName = "AAA",
+                FiestName = "AAA"
             }
+        });
+        
+        modelBuilder.Entity<Prescription_Medicament>().HasData(new List<Prescription_Medicament>()
+        {
+            new Prescription_Medicament
+            {
+                IdMedicament = 1,
+                Dose = 3,
+                Details = "Some description..."
+            },
+            
+            new Prescription_Medicament
+            {
+            IdMedicament = 1,
+            Dose = 10,
+            Details = "AAA"
+        }
         });
     }
 }
