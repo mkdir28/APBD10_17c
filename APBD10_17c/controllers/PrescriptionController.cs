@@ -5,5 +5,10 @@ namespace APBD10_17c.data;
 [Route("api/[controller]")]
 public class PrescriptionController
 {
-    
+        
+    private readonly DbConnection _dbService;
+    public PrescriptionController(IDbConnection dbService)
+    {
+        _dbService = dbService;
+    }
 }
