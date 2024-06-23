@@ -23,9 +23,14 @@ public class DbContext: IDbContext
         return await _context.Patients.AnyAsync(e => e.IdPatient == id);
     }
 
-    public async Task AddPatient(Patient patient)
+    public async Task AddPatient(PatientDTO patient)
     {
-        await _context.AddAsync(patient);
+        var patientEntity = new Patient
+        {
+            IdPatient = patient.IdPatient,
+            FiestName = patient.FiestName,
+        };
+        await _context.AddAsync(patientEntity);
         await _context.SaveChangesAsync();
     }
 
