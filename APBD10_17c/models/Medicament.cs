@@ -17,5 +17,5 @@ public class Medicament
     [MaxLength(100)]
     public string Type { get; set; } = string.Empty;
     
-    public ICollection<Prescription_Medicament> Prescription_Medicaments { get; set; } = new HashSet<Prescription_Medicament>();
+    public ICollection<Prescription_Medicament> PrescriptionMedicaments { get; set; } = new HashSet<Prescription_Medicament>();
 }
