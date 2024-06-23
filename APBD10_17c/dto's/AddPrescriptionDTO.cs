@@ -5,7 +5,7 @@ namespace APBD10_17c.dyp_s;
 
 public class AddPatientDTO
 {
-    public PatientDTO PatientDto { get; set; } = null;
+    public PatientDTO Patient { get; set; } = null;
     public MedicamentsDTO MedicamentsDTO { get; set; } = null;
     public DateTime Date { get; set; }
     public DateTime? DueDate { get; set; }
